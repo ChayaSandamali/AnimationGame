@@ -1,0 +1,49 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MyActivity">
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8526233314088915/1012862381" />
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/FireScreen"
+        android:layout_below="@+id/Snow"
+        android:src="@drawable/tsunami"
+        android:layout_centerHorizontal="true"
+    />
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/Snow"
+        android:layout_below="@+id/Tsunami"
+        android:src="@drawable/snow"
+        android:layout_centerHorizontal="true"
+        />
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/Tsunami"
+        android:layout_below="@+id/GlassBreak"
+        android:src="@drawable/crack"
+        android:layout_centerHorizontal="true"
+        />
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/GlassBreak"
+        android:src="@drawable/firescreen"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
